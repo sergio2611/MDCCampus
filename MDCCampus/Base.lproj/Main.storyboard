@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hialeah" translatesAutoresizingMaskIntoConstraints="NO" id="SY9-2b-H2r">
+                                <rect key="frame" x="16" y="29" width="343" height="409"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv1-6O-Pi4">
+                                <rect key="frame" x="16" y="473" width="343" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="kgp-bk-VHh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IY1-iQ-M5v">
+                                <rect key="frame" x="16" y="605" width="31" height="50"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="PrevClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zIy-om-hF9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqG-je-0l8">
+                                <rect key="frame" x="327" y="605" width="32" height="50"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="NextClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fou-k1-5hu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cv1-6O-Pi4" secondAttribute="bottom" constant="70" id="56c-1e-XmC"/>
+                            <constraint firstItem="cv1-6O-Pi4" firstAttribute="leading" secondItem="SY9-2b-H2r" secondAttribute="leading" id="A84-nP-JgS"/>
+                            <constraint firstItem="SY9-2b-H2r" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Hs3-Yu-HYf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zqG-je-0l8" secondAttribute="bottom" constant="12" id="IU9-5y-Inn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IY1-iQ-M5v" secondAttribute="bottom" constant="12" id="JbI-Vn-md6"/>
+                            <constraint firstItem="cv1-6O-Pi4" firstAttribute="trailing" secondItem="SY9-2b-H2r" secondAttribute="trailing" id="KPl-EU-AvD"/>
+                            <constraint firstItem="zqG-je-0l8" firstAttribute="top" secondItem="cv1-6O-Pi4" secondAttribute="bottom" constant="8" id="Ma6-Fx-Jyd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zqG-je-0l8" secondAttribute="trailing" constant="16" id="Wyy-Be-3O4"/>
+                            <constraint firstItem="SY9-2b-H2r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="XQR-F6-XFQ"/>
+                            <constraint firstItem="cv1-6O-Pi4" firstAttribute="top" secondItem="SY9-2b-H2r" secondAttribute="bottom" constant="35" id="XTy-WX-Dug"/>
+                            <constraint firstItem="IY1-iQ-M5v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hvJ-sd-NoI"/>
+                            <constraint firstItem="IY1-iQ-M5v" firstAttribute="top" secondItem="cv1-6O-Pi4" secondAttribute="bottom" constant="8" id="nbn-wP-XEZ"/>
+                            <constraint firstItem="SY9-2b-H2r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yic-sy-v2w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Image" destination="SY9-2b-H2r" id="r9Y-6j-bSj"/>
+                        <outlet property="btnNext" destination="zqG-je-0l8" id="E8o-IJ-ROQ"/>
+                        <outlet property="btnPrev" destination="IY1-iQ-M5v" id="ueC-KO-RHh"/>
+                        <outlet property="lbLabel" destination="cv1-6O-Pi4" id="KN1-gI-7by"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hialeah" width="718" height="358"/>
+    </resources>
+</document>
